@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <div id="root" class="wrapper">
+    <header class="header wrapper__header">
+      <div class="container">
+        <div class="header__content">
+          <a href="#" class="header__logo">
+            <img
+              src="./assets/img/logo.svg"
+              alt="Weather app logo"
+              class="header__logo-image"
+            />
+          </a>
+          <form class="search-form header__search-form">
+            <input
+              type="search"
+              placeholder="Search Location..."
+              autocomplete="off"
+              id="search-input"
+              class="search-form__search-input"
+            />
+            <button type="submit" class="search-form__search-button">
+              <img
+                src="./assets/img/search-icon.svg"
+                alt="Search icon" 
+                class="search-form__search-button-icon"
+              />
+            </button>
+            <ul class="search-form__search-locations-list">
+              <template id="search-locations-item-title-template">
+                <li class="search-form__search-locations-item">
+                  <p class="search-form__search-locations-title">Saved locations:</p>
+                </li>
+              </template>
+              <template id="search-locations-item-template">
+                <li class="search-form__search-locations-item">
+                  <p class="search-form__search-locations-text"></p>
+                </li>
+              </template>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div id="background" class="main__background">
+        <div class="container">
+          <div class="main__content">
+            <div class="main__weather-widget-wrapper">
+              <div class="weather-widget main__weather-widget">
+                <div class="weather-widget__temperature">
+                  <span class="weather-widget__temperature-value"></span>
+                </div>
+                <div class="weather-widget__meta">
+                  <div class="weather-widget__location">
+                    <p class="weather-widget__location-name"></p>
+                  </div>
+                  <div class="weather-widget__date">
+                    <span class="weather-widget__date-value"></span>
+                  </div>
+                </div>
+                <div class="weather-widget__icon"></div>
+              </div>
+              <button id="get-weather-by-location-button" class="main__get-weather-by-location-button">
+                Get weather by location
+              </button>
+            </div>
+            <button class="main__slide-show-button">
+              <span class="main__slide-show-button-triangle"></span>
+            </button>
+            <div class="menu main__menu">
+              <div class="menu__inner">
+                <p class="menu__details-title">Weather Details...</p>
+                <ul class="menu__details-list">
+                  <li class="menu__details-item">
+                    <p class="menu__details-item-weather-conditions"></p>
+                  </li>
+                  <li class="menu__details-item menu__details-item--icon--temp-max">
+                    <p class="menu__details-item-text">Temp max</p>
+                    <span class="menu__details-item-value"></span>
+                  </li>
+                  <li class="menu__details-item menu__details-item--icon--temp-min">
+                    <p class="menu__details-item-text">Temp min</p>
+                    <span class="menu__details-item-value"></span>
+                  </li>
+                  <li class="menu__details-item menu__details-item--icon--humadity">
+                    <p class="menu__details-item-text">Humadity</p>
+                    <span class="menu__details-item-value"></span>
+                  </li>
+                  <li class="menu__details-item menu__details-item--icon--cloudy">
+                    <p class="menu__details-item-text">Cloudy</p>
+                    <span class="menu__details-item-value"></span>
+                  </li>
+                  <li class="menu__details-item menu__details-item--icon--wind">
+                    <p class="menu__details-item-text">Wind</p>
+                    <span class="menu__details-item-value"></span>
+                  </li>
+                </ul>
+                <p class="menu__forecast-title">Today’s Weather Forecast...</p>
+                <ul class="menu__forecast-list">
+                  <template id="forecast-card-template">
+                    <li class="menu__forecast-item">
+                      <article class="forecast-card">
+                        <div class="forecast-card__icon"></div>
+                        <div class="forecast-card__info">
+                          <span class="forecast-card__time"></span>
+                          <p class="forecast-card__conditions"></p>
+                        </div>
+                        <div class="forecast-card__temperature">
+                          <span class="forecast-card__temperature-value"></span>
+                        </div>
+                      </article>
+                    </li>
+                  </template>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+</html>
