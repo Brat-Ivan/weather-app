@@ -1,5 +1,5 @@
 export function weatherConditionToIconMapper(iconCode) {
-  switch(iconCode) {
+  switch (iconCode) {
     case '01d':
       return 'sun';
     case '01n':

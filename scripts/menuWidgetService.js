@@ -1,8 +1,4 @@
-import { formatTemperature } from './helpers/formatTemperature.js';
-import { formatPercent } from './helpers/formatPercent.js';
-import { formatSpeed } from './helpers/formatSpeed.js';
-import { formatTime } from './helpers/formatTime.js';
-import { weatherConditionToIconMapper } from './helpers/mappers.js';
+import { formatTemperature, formatPercent, formatSpeed, formatTime, weatherConditionToIconMapper } from './helpers/helperFunctions.js';
 import { SECOND } from './constants.js';
 
 function createMenuWidgetService() {
@@ -104,7 +100,7 @@ function createMenuWidgetService() {
   }
 
   return {
-    process
+    process,
   }
 }
 

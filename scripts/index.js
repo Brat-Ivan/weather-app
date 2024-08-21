@@ -1,9 +1,9 @@
 import { weatherApiService } from './weatherApiService.js';
 import { DEFAULT_CITY, Settings } from './constants.js';
-import { weatherWidgetService } from './weatherWidgetService.js'
-import { fetchLocationNames } from './fetchLocationNames.js'
-import { formatLocationName } from './helpers/formatLocationName.js'
-import { menuWidgetService } from './menuWidgetService.js'
+import { weatherWidgetService } from './weatherWidgetService.js';
+import { fetchLocationNames } from './fetchLocationNames.js';
+import { formatLocationName } from './helpers/formatLocationName.js';
+import { menuWidgetService } from './menuWidgetService.js';
 
 const getWeatherByLocationBtn = document.querySelector('#get-weather-by-location-button');
 

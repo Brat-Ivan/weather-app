@@ -10,4 +10,4 @@ export const SECOND = 1000;
 export const Settings = {
   isLocationFeatureEnabled: 'isLocationFeatureEnabled',
   isSlideShowRunning: 'isSlideShowRunning',
-}
+};

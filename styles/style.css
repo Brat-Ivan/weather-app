@@ -469,12 +469,12 @@ body {
   }
   
   .main__weather-widget-wrapper {
-    margin: auto 0 calc(100vh - 447px + 20px);
+    margin: auto 0 calc(100vh - 427px);
   }
 
   @media screen and (min-height: 1049px) {
     .main__weather-widget-wrapper {
-      margin: calc(100vh - 783px - 20px) 0 auto;
+      margin: calc(100vh - 803px) 0 auto;
     }
   }
   
@@ -518,12 +518,12 @@ body {
   .main__slide-show-button {
     width: 60px;
     height: 60px;
-    margin: auto 0 calc(100vh - 447px + 20px) auto;
+    margin: auto 0 calc(100vh - 427px) auto;
   }
 
   @media screen and (min-height: 1049px) {
     .main__slide-show-button {
-      margin: calc(100vh - 662px - 20px) 0 auto auto;
+      margin: calc(100vh - 682px) 0 auto auto;
     }
   }
   
@@ -635,12 +635,12 @@ body {
   }
   
   .main__weather-widget-wrapper {
-    margin: auto 0 calc(100vh - 242px + 12px);
+    margin: auto 0 calc(100vh - 230px);
   }
 
   @media screen and (min-height: 744px) {
     .main__weather-widget-wrapper {
-      margin: calc(100vh - 618px - 12px) 0 auto;
+      margin: calc(100vh - 630px) 0 auto;
     }
   }
   
@@ -685,12 +685,12 @@ body {
     width: 32px;
     height: 32px;
     border-radius: 4px;
-    margin: auto 0 calc(100vh - 242px + 12px) auto;
+    margin: auto 0 calc(100vh - 230px) auto;
   }
 
   @media screen and (min-height: 744px) {
     .main__slide-show-button {
-      margin: calc(100vh - 534px - 12px) 0 auto auto;
+      margin: calc(100vh - 546px) 0 auto auto;
     }
   }
   

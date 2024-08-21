@@ -1,5 +1,6 @@
-export function formatLocationName(data) {
-  return data.trim()
+export const formatLocationName = (data) => {
+  return data
+    .trim()
     .split(/\s+/)
     .map(elem => {
       return elem
@@ -10,4 +11,4 @@ export function formatLocationName(data) {
         .join('-');
     })
     .join(' ');
-}
+};
